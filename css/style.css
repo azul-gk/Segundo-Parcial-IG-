@@ -1,0 +1,96 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/*Contenedor*/
+#contenedor{
+    width: 100%;
+    max-width: 950px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+
+  background-image: url("../img/fondo.png");
+}
+
+main {
+    padding: 4rem;
+    background-color: rgb(238, 245, 252);
+}
+
+/*Estilos de la cabecera*/
+header{
+    background-color: rgba(2, 6, 34, 0.726);
+}
+header h1{
+    padding: 1em;
+    text-align: center;
+    margin: 0;
+    color: aliceblue;
+}
+
+/*ESTILOS DEL NAVEGADOR*/
+nav ul{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(7, 25, 39, 0.945);
+}
+nav li{
+    display: inline-block;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav a{
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+/*Estilos e interactividad del navegador*/
+nav a:hover {
+    background-color: rgba(11, 82, 100, 0.815);
+}
+nav a:active {
+    background-color: rgb(15, 9, 49);
+}
+
+/*GOOGLE FONTS*/
+.tipografiaTitulo{
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*Estilos e interactividad del pie de página*/
+footer{
+    background-color: rgba(7, 25, 39, 0.945);
+    padding: 3rem;
+}
+address{
+    color: aliceblue;
+}
+/*Link de contacto*/
+address a:link {
+    color: rgb(55, 86, 172);
+}
+address a:visited{
+    color: rgb(91, 102, 196);
+}
+address a:hover {
+    background-color: rgb(23, 29, 90);
+}
+address a:active {
+    background-color: rgb(51, 57, 129);
+}
+
+
