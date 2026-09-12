@@ -94,3 +94,37 @@ address a:active {
 }
 
 
+/*ESTILOS PARA LAS COLUMNAS!!!*/
+
+/*PÁGINA 1*/
+
+.columnasPag1 {
+  display: flex;
+  gap: 20px; 
+}
+
+.columna {
+  flex: 1; 
+  background-color: #dfdfe9; 
+  padding: 1rem;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.columna img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.columna blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 15px;
+}
+
+/*PÁGINA 2*/
+
+
+
+
