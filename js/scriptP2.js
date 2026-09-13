@@ -22,3 +22,43 @@ function mostrarDatoCurioso() {
 
 mostrarDatoCurioso();
 botonDato.addEventListener('click', mostrarDatoCurioso);
+
+// MOSTRAR y OCULTAR FOTOS
+
+const botonGaleria = document.querySelector(".abrirCerrar");
+const contenedorGaleria = document.getElementById("galeria");
+
+botonGaleria.addEventListener("click", function() {
+    if (contenedorGaleria.style.display === "none") {
+        contenedorGaleria.style.display = "flex";
+        botonGaleria.innerText = "Imágenes ↑";
+    } else {
+        contenedorGaleria.style.display = "none";
+        botonGaleria.innerText = "Imágenes ↓";
+    }
+});
+
+//LA GALERIA
+const obras = [
+    { nombre: "#1: DETAIL OF Process 6", año: 2005, imagen: "img/galeria1.jpg" },
+    { nombre: "Still from Study for a Garden of Earthly Delights", año: 2018, imagen: "img/galeria2.jpg" },
+    { nombre: "DETAIL OF PROCESS 13 from PRocess compendium", año: 2010, imagen: "img/galeria3.jpg" },
+    { nombre: "DETAIL of A Mathematical Theory of Communication book", año: 2018, imagen: "img/galeria4.jpg" },
+    { nombre: "Still from ATOMS, 2023.", año: 2023, imagen: "img/galeria5.jpg" }
+];
+
+function galeriaObras() {
+    let grupoObras = "";
+    for (let i = 0; i < obras.length; i++) {
+        grupoObras += `
+            <article class="cuadro">
+                <img src="${obras[i].imagen}" alt="${obras[i].nombre}">
+                <h3>${obras[i].nombre}</h3>
+                <p>Año: ${obras[i].año}</p>
+            </article>
+        `;
+    }
+    contenedorGaleria.innerHTML = grupoObras;
+}
+
+galeriaObras();
